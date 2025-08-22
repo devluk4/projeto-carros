@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.filme {
+    position: relative;
+    width: 200px;
+    text-align: center;
+}
+
+.filme img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.info {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #BB1313;
+    padding: 10px;
+    display: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.filme:hover .info {
+    display: block;
+}
